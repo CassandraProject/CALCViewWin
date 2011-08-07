@@ -1,0 +1,700 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\CALCViewWin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CALCViewWin.ico"
+IDR_ICON_DOT_INACTIVE   ICON                    "res\\icon1.ico"
+IDR_CALCViewWinTYPE     ICON                    "res\\CALCViewWinDoc.ico"
+IDR_ICON_STOP_INACTIVE  ICON                    "res\\idr_stop.ico"
+IDR_ICON_DOT_ACTIVE     ICON                    "res\\ico00001.ico"
+IDR_CHECK_CYAN_ACTIVE   ICON                    "res\\ico00002.ico"
+IDR_CHECK_CYAN_INACTIVE ICON                    "res\\ico00003.ico"
+IDR_ICON_STOP_ACTIVE    ICON                    "res\\ico00004.ico"
+IDR_CHECK_RED_INACTIVE  ICON                    "res\\ico00006.ico"
+IDR_CHECK_RED_ACTIVE    ICON                    "res\\idr_chec.ico"
+IDR_CHECK_GREY_INACTIVE ICON                    "res\\ico00007.ico"
+IDR_CHECK_YELLOW_ACTIVE ICON                    "res\\ico00005.ico"
+IDR_CHECK_YELLOW_INACTIVE ICON                    "res\\ico00009.ico"
+IDR_CHECK_GREY_ACTIVE   ICON                    "res\\ico00008.ico"
+IDR_ICON_DOT_CUR_ACTIVE ICON                    "res\\idr_dot_.ico"
+IDR_ICON_DOT_ERROR      ICON                    "res\\ico00010.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLS               BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLS TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_CONTROLS_PLAY
+    BUTTON      ID_CONTROLS_PLAYCONTINUOUS
+    BUTTON      ID_CONTROLS_STOP
+    BUTTON      ID_CONTROLS_STEP
+    SEPARATOR
+    BUTTON      ID_ONLINE_CONNECT
+    SEPARATOR
+    BUTTON      ID_EDIT_PARAMETERS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Select All",                  ID_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert",                      ID_EDIT_INSERT
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Parameters...",               ID_EDIT_PARAMETERS
+    END
+    POPUP "Controls"
+    BEGIN
+        MENUITEM "Play",                        ID_CONTROLS_PLAY
+        MENUITEM "Play Continuous",             ID_CONTROLS_PLAYCONTINUOUS
+        MENUITEM "Stop",                        ID_CONTROLS_STOP
+        MENUITEM "Step",                        ID_CONTROLS_STEP
+        MENUITEM SEPARATOR
+        MENUITEM "Init",                        ID_CONTROLS_INIT
+        MENUITEM SEPARATOR
+        MENUITEM "CALCA",                       ID_CONTROLS_CALCA
+        MENUITEM "CALC",                        ID_CONTROLS_CALC
+        MENUITEM "MATH",                        ID_CONTROLS_MATH
+        MENUITEM "LOGIC",                       ID_CONTROLS_LOGIC
+    END
+    POPUP "Online"
+    BEGIN
+        MENUITEM "Connect...",                  ID_ONLINE_CONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "Settings...",                 ID_ONLINE_SETTINGS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CALCViewWin...",       ID_APP_ABOUT
+        MENUITEM "License...",                  ID_HELP_LICENSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About CALCView for Windows"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,9,20,20
+    LTEXT           "CALCView for Windows Version 0.9 beta",IDC_STATIC,40,15,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000-2004 Smellytoad Software",IDC_STATIC,
+                    40,35,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "All rights reserved",IDC_STATIC,40,46,188,8
+END
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Button2",IDC_BUTTON_PLAY,2,1,16,14,BS_ICON | BS_VCENTER | 
+                    NOT WS_TABSTOP
+END
+
+IDD_SETTINGSBOX DIALOGEX 0, 0, 313, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,256,24,50,14
+    LTEXT           "ICC Driver Path",IDC_STATIC,18,24,51,8
+    GROUPBOX        "ICC",IDC_STATIC,7,7,230,72
+    LTEXT           "cplns File",IDC_STATIC,18,42,30,8
+    EDITTEXT        IDC_ICCDRIVER,78,24,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CPLNS,78,42,145,14,ES_AUTOHSCROLL
+    GROUPBOX        "CALCView",IDC_STATIC,7,90,230,54
+    CONTROL         "Show All Errors",IDC_SHOWERRORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,126,64,10
+    LTEXT           "Loop Period",IDC_STATIC,18,109,38,8
+    EDITTEXT        IDC_LOOPPERIOD,78,106,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Seconds",IDC_STATIC,109,109,28,8
+    CONTROL         "Show All ICC Messages",IDC_SHOWALLICC,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,60,90,10
+END
+
+IDD_REGISTERBOX DIALOGEX 0, 0, 343, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,286,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,286,24,50,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,6,6,270,138
+END
+
+IDD_STEPS_VIEW DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STEPS_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,
+                    6,171,80
+END
+
+IDD_REGISTERS_VIEW DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STEPS_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,
+                    6,171,80
+END
+
+IDD_STACK_VIEW DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STEPS_VIEW,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,
+                    6,171,80
+END
+
+IDD_ACTIVATIONBOX DIALOGEX 0, 0, 424, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Welcome to CALCView!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,367,247,50,14
+    PUSHBUTTON      "Quit",IDCANCEL,309,247,50,14
+    LTEXT           "CALCView for Windows",IDC_STATIC,175,7,75,8
+    LTEXT           "Copyright (c) 2000-2004 Smellytoad Software. All rights reserved.",
+                    IDC_STATIC,109,18,213,8
+    EDITTEXT        IDC_EDIT1,155,179,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,155,195,138,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,97,182,19,8
+    LTEXT           "Activation Code",IDC_STATIC,97,198,52,8
+    GROUPBOX        "Step 1: Read and Accept License",IDC_STATIC,7,30,410,
+                    126
+    GROUPBOX        "Step 2: Enter Name and Activation Code",IDC_STATIC,7,
+                    164,410,72
+    CONTROL         "Accept License",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,139,63,10
+    EDITTEXT        IDC_EDIT3,15,43,393,93,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Unlock",IDC_CHECKCODE,302,187,50,14
+    EDITTEXT        IDC_EDIT4,65,215,310,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_CONNECTBOX DIALOGEX 0, 0, 236, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Connect..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,172,44,50,14
+    PUSHBUTTON      "Get Block",IDC_GET_BLOCK,14,44,50,14
+    PUSHBUTTON      "Add Block",IDC_ADD_BLOCK,66,44,50,14
+    PUSHBUTTON      "Modify Block",IDC_MODIFY_BLOCK,118,44,50,14
+    EDITTEXT        IDC_EDIT1,93,25,125,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,18,26,68,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ICC_Messages",IDC_STATIC,7,71,222,135
+    EDITTEXT        IDC_EDIT3,11,83,214,119,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "CP",IDC_STATIC,19,16,10,8
+    LTEXT           "Compound:Block",IDC_STATIC,94,16,54,8
+    GROUPBOX        "ICC Online Controls",IDC_STATIC,7,6,222,62
+END
+
+IDD_PARAMETERSBOX DIALOGEX 0, 0, 283, 250
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "All Parameters..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,226,229,50,14
+    CONTROL         "",IDC_PARAMLIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,
+                    7,269,214
+END
+
+IDD_TESTVIEW DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place form controls on this dialog.",IDC_STATIC,
+                    24,42,280,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Smellytoad Software"
+            VALUE "FileDescription", "CALCView: The ultimate CALC block creation tool"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CALCViewWin.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2004 Smellytoad Software.  All rights reserved."
+            VALUE "OriginalFilename", "CALCViewWin.exe"
+            VALUE "ProductName", "CALCView"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 9
+    END
+
+    IDD_SETTINGSBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_REGISTERBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_STEPS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_REGISTERS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_STACK_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_ACTIVATIONBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_CONNECTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_PARAMETERSBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_TESTVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CALCViewWin\n\nCALCViewWin\n\n\nCALCViewWin.Document\nCALCViewWin.Document"
+    IDS_PROGRAM_ROOT        "Software\\Smellytoad Software\\CALCViewWin"
+    IDS_KEY_NAME            "Name"
+    IDS_KEY_ACTIVATION      "Activation"
+    IDS_KEY_ICCDRVR         "ICCDriver"
+    IDS_KEY_CPLNS           "cplns"
+    IDS_KEY_LOOP_PERIOD     "LoopPeriod"
+    IDS_KEY_ICCMESSAGES     "ICCMessages"
+    IDS_KEY_SHOWERRORS      "ShowErrors"
+    IDS_KEY_ACCEPT          "AcceptLicense"
+    IDS_KEY_LASTCP          "LastCP"
+    IDS_KEY_LASTCB          "LastCB"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CALCViewWin"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_SELECTALL       "Select all rows\nSelect All"
+    ID_EDIT_INSERT          "Insert a Row\nInsert"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_DELETE          "Delete a row\nDelete"
+    ID_CONTROLS_PLAY        "Execute all of the instructions\nPlay"
+    ID_CONTROLS_PLAYCONTINUOUS 
+                            "Execute all of the instructions Periodically\nPlay Continuous"
+    ID_CONTROLS_STOP        "Stop executing instructions and reset Program Counter\nStop"
+    ID_CONTROLS_STEP        "Execute one instruction\nStep"
+    ID_CONTROLS_CALCA       "Change the block type to CALCA\nCALCA"
+    ID_CONTROLS_CALC        "Change the block type to CALC\nCALC"
+    ID_CONTROLS_MATH        "Change the block type to MATH\nMATH"
+    ID_CONTROLS_LOGIC       "Change the block type to LOGIC\nLOGIC"
+    ID_ONLINE_SETTINGS      "Change settings\nSettings"
+    ID_HELP_LICENSE         "View License and Activation Code\\License"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONTROLS_INIT        "Execute instructions as if initializing (e.g. BII)\nInit"
+    ID_ONLINE_CONNECT       "Connect to CP\nConnect"
+    ID_EDIT_PARAMETERS      "Edit all block parameters\nParameters"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\CALCViewWin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CALCViewWin", "CALCViewWin.vcproj", "{2BB58B7D-52E7-4E24-B2E8-D474F2D9AFC4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2BB58B7D-52E7-4E24-B2E8-D474F2D9AFC4}.Debug.ActiveCfg = Debug|Win32
+		{2BB58B7D-52E7-4E24-B2E8-D474F2D9AFC4}.Debug.Build.0 = Debug|Win32
+		{2BB58B7D-52E7-4E24-B2E8-D474F2D9AFC4}.Release.ActiveCfg = Release|Win32
+		{2BB58B7D-52E7-4E24-B2E8-D474F2D9AFC4}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
